@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dormio Legal</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f3f6f8;
+      --ink: #1a1f26;
+      --muted: #56606b;
+      --card: #ffffff;
+      --brand: #2a5f6a;
+      --border: #d9dee4;
+    }
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(120deg, #eef3f6, #f7f9fb);
+      padding: 32px 20px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    header h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+      letter-spacing: 0.2px;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+    nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 18px 0 28px;
+    }
+    nav a {
+      color: var(--brand);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 2px;
+    }
+    nav a:hover {
+      border-bottom-color: var(--brand);
+    }
+    .lang-switch {
+      display: inline-flex;
+      gap: 8px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .lang-switch button {
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--ink);
+      padding: 6px 10px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .lang-switch button.active {
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+    h2 {
+      margin-top: 0;
+      color: var(--brand);
+    }
+    h3 {
+      margin-bottom: 6px;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    footer {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: 32px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Dormio Legal</h1>
+      <p>Privacy policy and terms of use for the Dormio mobile app.</p>
+      <div class="lang-switch" role="tablist" aria-label="Language">
+        <button type="button" data-lang-btn="fr-FR" class="active">FR</button>
+        <button type="button" data-lang-btn="en-US">EN</button>
+        <button type="button" data-lang-btn="es-ES">ES</button>
+        <button type="button" data-lang-btn="de-DE">DE</button>
+        <button type="button" data-lang-btn="it-IT">IT</button>
+        <button type="button" data-lang-btn="pt-BR">PT</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
+      <a href="#support">Support</a>
+    </nav>
+
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <div data-lang="fr-FR">
+        <p>Dormio est un tracker de sommeil respectueux de la vie privee. L'analyse audio se fait sur l'appareil et aucun audio brut n'est envoye.</p>
+        <p>Nous stockons vos sessions de sommeil et evenements detectes localement. Vous pouvez les supprimer a tout moment dans Reglages. Les anciennes donnees peuvent etre supprimees automatiquement selon la retention.</p>
+        <p>Si vous activez le coach IA, nous envoyons des statistiques agregees (pas d'audio) a notre worker Cloudflare, puis a l'API Gemini pour generer des conseils.</p>
+        <p>Nous ne vendons pas vos donnees personnelles. Nous utilisons uniquement les donnees decrites ci-dessus pour fournir le service.</p>
+        <p>Contact : Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="en-US" style="display:none">
+        <p>Dormio is a privacy-first sleep tracker. Audio analysis happens on-device and no raw audio is uploaded.</p>
+        <p>We store your sleep sessions and detected events locally on your device. You can delete them at any time in Settings. Older data may be removed automatically based on your retention setting.</p>
+        <p>If you enable the AI coach, we send aggregated statistics (no raw audio) to our Cloudflare Worker, which forwards them to the Gemini API to generate tips.</p>
+        <p>We do not sell your personal data. We only use the data described above to provide the service.</p>
+        <p>Contact: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="es-ES" style="display:none">
+        <p>Dormio es un rastreador de sueno centrado en la privacidad. El analisis de audio se realiza en el dispositivo y no se sube audio bruto.</p>
+        <p>Guardamos las sesiones de sueno y los eventos detectados localmente. Puedes borrarlos en cualquier momento desde Ajustes. Los datos antiguos pueden eliminarse automaticamente segun la retencion.</p>
+        <p>Si activas el coach IA, enviamos estadisticas agregadas (sin audio) a nuestro worker de Cloudflare y luego a la API de Gemini para generar consejos.</p>
+        <p>No vendemos tus datos personales. Solo usamos los datos descritos arriba para ofrecer el servicio.</p>
+        <p>Contacto: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="de-DE" style="display:none">
+        <p>Dormio ist ein schlaftagebuch mit fokus auf datenschutz. Die audioanalyse findet auf dem geraet statt und es wird kein rohes audio hochgeladen.</p>
+        <p>Wir speichern deine schlafsitzungen und erkannten ereignisse lokal auf deinem geraet. Du kannst sie jederzeit in den Einstellungen loeschen. Aeltere daten koennen je nach retention automatisch entfernt werden.</p>
+        <p>Wenn du den KI Coach aktivierst, senden wir aggregierte statistiken (kein audio) an unseren Cloudflare Worker und danach an die Gemini API, um tipps zu erzeugen.</p>
+        <p>Wir verkaufen keine personenbezogenen daten. Wir nutzen nur die oben beschriebenen daten, um den dienst bereitzustellen.</p>
+        <p>Kontakt: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="it-IT" style="display:none">
+        <p>Dormio e un tracker del sonno incentrato sulla privacy. L'analisi audio avviene sul dispositivo e nessun audio grezzo viene caricato.</p>
+        <p>Salviamo le sessioni di sonno e gli eventi rilevati in locale. Puoi eliminarli in qualsiasi momento dalle Impostazioni. I dati piu vecchi possono essere rimossi automaticamente in base alla retention.</p>
+        <p>Se abiliti il coach IA, inviamo statistiche aggregate (nessun audio) al nostro worker Cloudflare e poi alla API Gemini per generare consigli.</p>
+        <p>Non vendiamo i tuoi dati personali. Usiamo solo i dati descritti sopra per fornire il servizio.</p>
+        <p>Contatto: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="pt-BR" style="display:none">
+        <p>Dormio e um rastreador de sono focado em privacidade. A analise de audio ocorre no dispositivo e nenhum audio bruto e enviado.</p>
+        <p>Armazenamos suas sessoes de sono e eventos detectados localmente. Voce pode apagar a qualquer momento em Ajustes. Dados antigos podem ser removidos automaticamente conforme a retencao.</p>
+        <p>Se voce ativar o coach IA, enviamos estatisticas agregadas (sem audio) para nosso worker Cloudflare e depois para a API Gemini para gerar dicas.</p>
+        <p>Nao vendemos seus dados pessoais. Usamos apenas os dados descritos acima para fornecer o servico.</p>
+        <p>Contato: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+    </section>
+
+    <section id="terms">
+      <h2>Terms of Use</h2>
+      <div data-lang="fr-FR">
+        <p>Dormio est fourni tel quel et ne constitue pas un avis medical.</p>
+        <p>Les abonnements sont optionnels et geres par Apple. Le paiement est debite sur votre identifiant Apple. Vous pouvez annuler a tout moment dans les reglages de l'App Store.</p>
+        <p>Conditions d'utilisation : EULA standard Apple<br>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+      <div data-lang="en-US" style="display:none">
+        <p>Dormio is provided as-is and is not medical advice.</p>
+        <p>Subscriptions are optional and managed by Apple. Payments are charged to your Apple ID. You can cancel anytime in App Store settings.</p>
+        <p>Terms of use: Apple Standard EULA<br>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+      <div data-lang="es-ES" style="display:none">
+        <p>Dormio se proporciona tal cual y no es un consejo medico.</p>
+        <p>Las suscripciones son opcionales y gestionadas por Apple. Los pagos se cargan a tu Apple ID. Puedes cancelar en cualquier momento en los ajustes de App Store.</p>
+        <p>Terminos de uso: EULA estandar de Apple<br>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+      <div data-lang="de-DE" style="display:none">
+        <p>Dormio wird ohne garantie bereitgestellt und ist keine medizinische beratung.</p>
+        <p>Abonnements sind optional und werden von Apple verwaltet. Die zahlung erfolgt ueber deine Apple ID. Du kannst jederzeit in den App Store Einstellungen kuendigen.</p>
+        <p>Nutzungsbedingungen: Apple Standard EULA<br>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+      <div data-lang="it-IT" style="display:none">
+        <p>Dormio e fornito cosi com'e e non e un consiglio medico.</p>
+        <p>Gli abbonamenti sono opzionali e gestiti da Apple. I pagamenti sono addebitati al tuo Apple ID. Puoi annullare in qualsiasi momento dalle impostazioni App Store.</p>
+        <p>Termini di utilizzo: EULA standard Apple<br>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+      <div data-lang="pt-BR" style="display:none">
+        <p>Dormio e fornecido como esta e nao e um conselho medico.</p>
+        <p>Assinaturas sao opcionais e gerenciadas pela Apple. Os pagamentos sao cobrados no seu Apple ID. Voce pode cancelar a qualquer momento nas configuracoes da App Store.</p>
+        <p>Termos de uso: EULA padrao da Apple<br>
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <div data-lang="fr-FR">
+        <p>Pour toute aide ou question : Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="en-US" style="display:none">
+        <p>For help or questions: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="es-ES" style="display:none">
+        <p>Para ayuda o preguntas: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="de-DE" style="display:none">
+        <p>Hilfe oder fragen: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="it-IT" style="display:none">
+        <p>Per aiuto o domande: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+      <div data-lang="pt-BR" style="display:none">
+        <p>Para ajuda ou duvidas: Thomas PIQUEPAILLE, asupriifg@gmail.com, +33 6 81 75 00 63.</p>
+      </div>
+    </section>
+
+    <footer>
+      <div data-lang="fr-FR">Derniere mise a jour : 2026-01-31</div>
+      <div data-lang="en-US" style="display:none">Last updated: 2026-01-31</div>
+      <div data-lang="es-ES" style="display:none">Ultima actualizacion: 2026-01-31</div>
+      <div data-lang="de-DE" style="display:none">Letzte aktualisierung: 2026-01-31</div>
+      <div data-lang="it-IT" style="display:none">Ultimo aggiornamento: 2026-01-31</div>
+      <div data-lang="pt-BR" style="display:none">Ultima atualizacao: 2026-01-31</div>
+    </footer>
+  </div>
+
+  <script>
+    function setLang(nextLang) {
+      document.querySelectorAll("[data-lang]").forEach(function(node) {
+        node.style.display = node.getAttribute("data-lang") === nextLang ? "" : "none";
+      });
+      document.querySelectorAll("[data-lang-btn]").forEach(function(button) {
+        button.classList.toggle("active", button.getAttribute("data-lang-btn") === nextLang);
+      });
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var initial = params.get("lang") || "fr-FR";
+    setLang(initial);
+
+    document.querySelectorAll("[data-lang-btn]").forEach(function(button) {
+      button.addEventListener("click", function() {
+        var next = button.getAttribute("data-lang-btn");
+        setLang(next);
+        history.replaceState({}, "", "?lang=" + next + window.location.hash);
+      });
+    });
+  </script>
+</body>
+</html>
